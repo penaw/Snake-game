@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.body{
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+}
+#background{
+    background: linear-gradient(rgb(156, 9, 193), rgb(138, 9, 193), rgb(64, 9, 193), rgb(9, 123, 193) );
+    width: 90vmin;
+    height: 92vmin;
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    border: 5px solid white;
+}
+
+.snake{
+    background: linear-gradient(rgb(0, 0, 0), rgb(235, 31, 161));
+    border: 3px solid black;
+
+}
+.food{
+    background: linear-gradient(rgb(156, 235, 10), rgb(74, 26, 196));
+    border: 3px solid black;
+}
+.head{
+    background: linear-gradient(rgb(0, 0, 0), rgb(111, 113, 111));
+    transform: scale(1.02);
+    border: 3px solid black;
+}
+
+#scorebox{
+    position: absolute;
+    top: 25px;
+    right: 65px;
+    font-size: 25px;
+    color: black;
+    border: 4px solid whitesmoke;
+    background: linear-gradient(rgb(235, 235, 10), rgb(156, 235, 10));
+}
+#highscorebox{
+    position: absolute;
+    top: 100px;
+    right: 65px;
+    font-size: 25px;
+    color: black;
+    border: 4px solid whitesmoke;
+    background: linear-gradient(rgb(235, 51, 10), rgb(235, 141, 10));
+}
+.up, .down{
+    padding-left: 330px;
+}
+.left, .right{
+    display: inline;
+    padding-left: 330px;
+}
+.hor{
+    padding-left: 310px;
+}
+
+button{
+    background: linear-gradient(rgb(170, 125, 115),rgb(177, 90, 71));
+    padding: 7px 7px;
+    border-radius:  12px;
+    border-style: outset;
+}
